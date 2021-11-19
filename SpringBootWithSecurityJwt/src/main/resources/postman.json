@@ -1,0 +1,28 @@
+POST:- http://localhost:8080/user/saveUser
+
+{
+    "username":"ganeshkr04",
+    "password": "123456",
+    "email": "ganeshkr04@gmail.com",
+    "roles": ["Admin", "Manager"]
+}
+
+o/p:- User with id '1' saved succssfully!
+
+POST:- http://localhost:8080/user/loginUser
+
+{
+    "username":"ganeshkr04",
+    "password":"123456"
+}
+
+
+o/p:- {
+  "token": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiI2NCIsInN1YiI6ImdhbmVzaGtyMDQiLCJpc3MiOiJBQkNfVGV4dCIsImF1ZCI6IlhZWl9UZXh0IiwiaWF0IjoxNjM3MzExNzcwLCJleHAiOjE2MzczMjI1NzB9.DkjDPNpNFQdn-khoB2nn1RjCQv_kt_Z2uA-2HZV-QHO5G0z4RWPA7mZeOLRT4eOaLaT_JzUsrPeRah5fYY6uHA",
+  "message": "Token generated successfully!"
+}
+
+POST:- http://localhost:8080/user/getData
+
+test Authorization = tokenValue
+
