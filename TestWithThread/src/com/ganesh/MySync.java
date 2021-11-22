@@ -3,7 +3,7 @@ package com.ganesh;
 public class MySync {
 	
 	static int count = 0;
-	public static void increment() {
+	public static synchronized void increment() {
 		 count ++;
 	}
 
@@ -41,6 +41,7 @@ public class MySync {
 		System.out.println("Value Of Count : "+ count);
 		
 		//Output are not fixed each time it will give u different numbers.
+		//When we synchronized the method it will give u same output every times.
 
 	}
 
